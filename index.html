@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sahil Prajapati - Web Developer from India</title>
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    .portfolio-grid, .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .portfolio-item, .skill-item {
+      background-color: #f5f5f5;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .skill-bar {
+      background-color: #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 10px;
+    }
+
+    .skill-bar span {
+      display: block;
+      height: 100%;
+      background-color: #3b82f6;
+    }
+  </style>
+</head>
+
+<body id="top">
+  <!-- HEADER -->
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#"><h1 class="logo">Sahil Prajapati</h1></a>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
+        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      </button>
+
+      <nav class="navbar container">
+        <ul class="navbar-list">
+          <li><a href="#home" class="navbar-link" data-nav-link>Home</a></li>
+          <li><a href="#about" class="navbar-link" data-nav-link>About</a></li>
+          <li><a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a></li>
+          <li><a href="#skills" class="navbar-link" data-nav-link>Skills</a></li>
+          <li><a href="#contact" class="navbar-link" data-nav-link>Contact</a></li>
+          <li><a href="#blog" class="navbar-link" data-nav-link>Blog</a></li>
+          <li>
+            <a href="./assets/assets/Sahil_Prajapati_Resume.docx" class="btn btn-primary" download>Download Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="container">
+          <div class="hero-banner">
+            <img src="/assets/assets/my pic.jpg" width="800" height="864" loading="lazy" alt="Sahil's Photo" class="img-cover"/>
+            <div class="elem elem-1"><p class="elem-title">3+</p><p class="elem-text">Years Learning</p></div>
+            <!-- <div class="elem elem-2"><p class="elem-title">10+</p><p class="elem-text">Projects Completed</p></div> -->
+            <div class="elem elem-3"><ion-icon name="trophy"></ion-icon></div>
+          </div>
+
+          <div class="hero-content">
+            <h2 class="hero-title">
+              <span>Hello I'm</span>
+              <strong>Sahil Prajapati</strong> Web Developer from India
+            </h2>
+            <p class="hero-text">B.Tech IT student passionate about frontend development, AI, and cybersecurity. Let's build something amazing!</p>
+            <div class="btn-group">
+              <a href="#contact" class="btn btn-primary blue">Get a Quote</a>
+              <a href="#about" class="btn">About Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+  <!-- ABOUT -->
+<section class="section about" id="about">
+  <div class="container">
+    <figure class="about-banner">
+      <img src="./assets/images/about-banner.jpg" width="800" height="652" loading="lazy" alt="Sahil's Photo" class="img-cover"/>
+      <img src="./assets/images/absolute-image.jpg" width="800" height="717" loading="lazy" alt="Sahil's Image" class="abs-img"/>
+      <div class="abs-icon abs-icon-1"><ion-icon name="logo-css3"></ion-icon></div>
+      <div class="abs-icon abs-icon-2"><ion-icon name="logo-javascript"></ion-icon></div>
+      <div class="abs-icon abs-icon-3"><ion-icon name="logo-angular"></ion-icon></div>
+    </figure>
+
+    <div class="about-content">
+      <p class="section-subtitle">B.Tech IT Student | Web Developer</p>
+      <h2 class="h2 section-title">Turning Ideas into Secure & Scalable Digital Solutions</h2>
+      
+      <p class="section-text">
+        I’m <strong>Sahil Prajapati</strong>, an enthusiastic B.Tech (IT) student at Pranveer Singh Institute of Technology (Batch 2027) 
+        with a strong passion for <b>web development</b>, <b>cybersecurity</b>, and <b>AI-powered solutions</b>.
+      </p>
+
+      <p class="section-text">
+        Skilled in HTML, CSS, JavaScript, Tailwind CSS, and basic backend integration, I love crafting responsive, 
+        user-friendly applications. I’m currently working on cybersecurity-focused projects, including 
+        <em>AI voice assistants</em> and <em>fraud-protection tools</em>.
+      </p>
+
+      <p class="section-text">
+        My goal is to merge creativity with technology to build innovative solutions that make a real-world impact.
+      </p>
+
+      <a href="#portfolio" class="btn btn-primary blue">View My Work</a>
+    </div>
+  </div>
+</section>
+
+
+      <!-- PORTFOLIO -->
+      <section class="section portfolio" id="portfolio">
+        <div class="container">
+          <p class="section-subtitle">My Work</p>
+          <h2 class="h2 section-title">Portfolio</h2>
+          <p class="section-text">A collection of some recent projects I’ve worked on using various technologies.</p>
+
+          <div class="portfolio-grid">
+            <div class="portfolio-item">
+              <img src="https://botup.com/images/ai-chatbot-screenshot-1.png?v=1681707593517652013" alt="Project 1" class="img-cover"/>
+              <h3 class="portfolio-title">AI Chatbot</h3>
+              <p class="portfolio-text">A voice-controlled assistant for cybersecurity queries using JS.</p>
+            </div>
+            <div class="portfolio-item">
+              <img src="https://miro.medium.com/max/3200/0*P75Qkj2ZVRTQxPig" alt="Project 2" class="img-cover"/>
+              <h3 class="portfolio-title">E-commerce Site</h3>
+              <p class="portfolio-text">A frontend website for online gifting products (HTML/CSS/JS).</p>
+            </div>
+            <div class="portfolio-item">
+              <img src="https://png.pngtree.com/background/20230617/original/pngtree-digital-screen-displaying-software-operated-3d-assistant-robot-picture-image_3667856.jpg" alt="Project 3" class="img-cover"/>
+              <h3 class="portfolio-title">3D Robot Assistant</h3>
+              <p class="portfolio-text">Built using Three.js and GLTFLoader for futuristic UI.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <!-- SKILLS -->
+<section class="section skills" id="skills">
+  <div class="container">
+    <p class="section-subtitle">Technical Proficiency</p>
+    <h2 class="h2 section-title">My Skills</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-icon"><ion-icon name="logo-html5"></ion-icon></div>
+        <h3 class="skill-title">HTML5 / CSS3</h3>
+        <div class="progress-bar"><span style="width: 95%"></span></div>
+        <p class="skill-level">95%</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><ion-icon name="logo-javascript"></ion-icon></div>
+        <h3 class="skill-title">JavaScript</h3>
+        <div class="progress-bar"><span style="width: 90%"></span></div>
+        <p class="skill-level">90%</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><ion-icon name="logo-react"></ion-icon></div>
+        <h3 class="skill-title">React.js</h3>
+        <div class="progress-bar"><span style="width: 85%"></span></div>
+        <p class="skill-level">85%</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><ion-icon name="logo-three"></ion-icon></div>
+        <h3 class="skill-title">Three.js</h3>
+        <div class="progress-bar"><span style="width: 70%"></span></div>
+        <p class="skill-level">70%</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><ion-icon name="shield-checkmark-outline"></ion-icon></div>
+        <h3 class="skill-title">Cybersecurity</h3>
+        <div class="progress-bar"><span style="width: 80%"></span></div>
+        <p class="skill-level">80%</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><ion-icon name="bar-chart-outline"></ion-icon></div>
+        <h3 class="skill-title">Data Science (Basics)</h3>
+        <div class="progress-bar"><span style="width: 65%"></span></div>
+        <p class="skill-level">65%</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+      <!-- CONTACT -->
+      <section class="section contact" id="contact">
+        <div class="container">
+          <div class="contact-card">
+            <p class="card-subtitle">Don't be shy</p>
+            <h2 class="h2 section-title">Drop Me a Line</h2>
+            <div class="wrapper">
+              <form action="#" class="contact-form">
+                <input type="text" name="name" placeholder="Name" required class="contact-input" />
+                <input type="email" name="email" placeholder="Email" required class="contact-input" />
+                <textarea name="message" placeholder="Message" required class="contact-input"></textarea>
+                <button type="submit" class="btn-submit">Submit Message</button>
+              </form>
+              <ul class="contact-list">
+                <li class="contact-item">
+                  <div class="contact-icon"><ion-icon name="location"></ion-icon></div>
+                  <div><h3 class="contact-item-title">Address</h3><address class="contact-item-link">Kanpur, India</address></div>
+                </li>
+                <li class="contact-item">
+                  <div class="contact-icon"><ion-icon name="mail"></ion-icon></div>
+                  <div><h3 class="contact-item-title">Email</h3><a href="mailto:sahilp8840@gmail.com" class="contact-item-link">sahilp8840@gmail.com</a></div>
+                </li>
+                <li class="contact-item">
+                  <div class="contact-icon"><ion-icon name="call"></ion-icon></div>
+                  <div><h3 class="contact-item-title">Phone</h3><a href="tel:+919935675644" class="contact-item-link">+91 9935675644</a></div>
+                </li>
+                <li class="contact-item">
+                  <div class="contact-icon"><ion-icon name="logo-linkedin"></ion-icon></div>
+                  <div><h3 class="contact-item-title">LinkedIn</h3><a href="https://linkedin.com/in/sahil-prajapati-b29239314" target="_blank" class="contact-item-link">linkedin.com/in/sahil-prajapati</a></div>
+                </li>
+                <li class="contact-item">
+                  <div class="contact-icon"><ion-icon name="logo-github"></ion-icon></div>
+                  <div><h3 class="contact-item-title">GitHub</h3><a href="https://github.com/sahilpraja8840" target="_blank" class="contact-item-link">github.com/sahilpraja8840</a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOG -->
+      <!-- Optional: Add blog or certifications here -->
+
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">&copy; 2025 <a href="#">Sahil Prajapati</a>. All Rights Reserved.</p>
+      <ul class="footer-list">
+        <li><a href="#" class="footer-link">Terms & Condition</a></li>
+        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <a href="#top" class="back-to-top" data-back-to-top>BACK TOP</a>
+
+  <!-- JS & Icons -->
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
